@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background: #e0e8ff url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  padding: 2%;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+  margin: 1.5rem 0;
+  border-radius: 15px;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.primary {
+  color: #f5f7ff;
+  background: #3829e0;
+  -webkit-box-shadow: 0 5px 10px 0px #7280a7;
+          box-shadow: 0 5px 10px 0px #7280a7;
+}
+
+.primary:hover {
+  opacity: 0.85;
+}
+
+.secondary {
+  color: #7280a7;
+}
+
+.secondary:hover {
+  color: #1f2f56;
+}
+
+.card {
+  max-width: 375px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 200px 0px rgba(114, 128, 167, 0.5);
+          box-shadow: 0 0 200px 0px rgba(114, 128, 167, 0.5);
+}
+
+.box-infos {
+  padding: 0 2rem 0.5rem 2rem;
+  background: #fff;
+}
+
+.box-infos h1 {
+  color: #1f2f56;
+  padding: 1.5rem 0 1rem 0;
+  font-weight: 900;
+}
+
+.box-infos p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #7280a7;
+}
+
+.plans {
+  padding: 1rem;
+  margin: 2rem 0;
+  background: #f5f7ff;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.plans a {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #3829e0;
+  font-weight: 700;
+}
+
+.plans a:hover {
+  opacity: 0.85;
+  text-decoration: none;
+}
+
+.plans div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plans div img {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.plans div.plan-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.plans div.plan-info p {
+  font-size: 0.875rem;
+}
+
+.plans div.plan-info p:nth-child(1) {
+  color: #1f2f56;
+  font-weight: 900;
+  margin-bottom: 0.2rem;
+}
+
+@media screen and (max-width: 760px) {
+  main {
+    background: #e0e8ff url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+  }
+}
+/*# sourceMappingURL=style.css.map */

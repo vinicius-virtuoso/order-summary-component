@@ -1,0 +1,145 @@
+// ### Primary
+
+$--Pale-blue: hsl(225, 100%, 94%);
+$--Bright-blue: hsl(245, 75%, 52%);
+
+// ### Neutral
+
+$--Very-pale-blue: hsl(225, 100%, 98%);
+$--Desaturated-blue: hsl(224, 23%, 55%);
+$--Dark-blue: hsl(223, 47%, 23%);
+$--Desaturated-blue-opacity: rgba(114, 128, 167, 0.5);
+
+$--White: #fff;
+
+// ## Typography
+$--Font-size-paragraph: 16px;
+$--Font-Family: "Red Hat Display", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $--Font-Family;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: $--Pale-blue url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  padding: 2%;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+  margin: 1.5rem 0;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+.primary {
+  color: $--Very-pale-blue;
+  background: $--Bright-blue;
+  box-shadow: 0 5px 10px 0px $--Desaturated-blue;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+.secondary {
+  color: $--Desaturated-blue;
+  &:hover {
+    color: $--Dark-blue;
+  }
+}
+
+.card {
+  max-width: 375px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 200px 0px $--Desaturated-blue-opacity;
+}
+.box-infos {
+  padding: 0 2rem 0.5rem 2rem;
+  background: $--White;
+
+  h1 {
+    color: $--Dark-blue;
+    padding: 1.5rem 0 1rem 0;
+    font-weight: 900;
+  }
+  p {
+    font-size: $--Font-size-paragraph;
+    font-weight: 500;
+    color: $--Desaturated-blue;
+  }
+}
+.plans {
+  padding: 1rem;
+  margin: 2rem 0;
+  background: $--Very-pale-blue;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    transition: 0.3s ease;
+    color: $--Bright-blue;
+    font-weight: 700;
+    &:hover {
+      opacity: 0.85;
+      text-decoration: none;
+    }
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+  div img {
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+  div.plan-info {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-size: 0.875rem;
+    }
+  }
+  div.plan-info p:nth-child(1) {
+    color: $--Dark-blue;
+    font-weight: 900;
+    margin-bottom: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  main {
+    background: $--Pale-blue url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+  }
+}
